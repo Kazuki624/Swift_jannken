@@ -11,8 +11,7 @@ struct ContentView: View {
     let soundPlayer = SoundPlayer()
     var body: some View {
         ZStack{
-            Image("background")
-                .resizable().ignoresSafeArea().scaledToFill()
+            Background(imageName: "background")
             HStack{
                 Button {
                     soundPlayer.cymbalPlay()
